@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+.navbarLeft {
+    height: 100px;
+    width: 1000px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.navbarLeft h1 {
+    color: ghostwhite;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.navbarLeft ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: ghostwhite;
+    font-size: larger;
+}
+
+.navbarLeft ul li {
+    padding: 5px;
+    opacity: 75%;
+}
+
+.navbarLeft ul li:hover {
+    opacity: 100%;
+    /* box-shadow: 0 0 10px rgb(124, 124, 124); */
+    cursor: pointer;
+}
+
+.navbarRight {
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbarRight button {
+    width: 200px;
+    font-size: 20px;
+    color: ghostwhite;
+    height: 50px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: dodgerblue;
+}
+
+.navbarRight button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px ghostwhite;
+}
+
+.mainLeft {
+    width: 60%;
+    height: 2000px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.userProfile {
+    width: 100%;
+    height: 1000px;
+    margin-top: 120px;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.upperBanner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.upperBanner img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    border-radius: 50%;
+    z-index: 50;
+}
+
+.details {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: ivory;
+    z-index: 10;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.details h2 {
+    font-size: 50px;
+    position: relative;
+    bottom: 350px;
+    left: 50px;
+    z-index: 30;
+}
+
+.details img {
+    width: 12px;
+    height: 20px;
+    position: relative;
+    bottom: 325px;
+    right: 250px;
+    z-index: 10;
+    /* object-fit: cover; */
+}
+
+.details h3 {
+    position: relative;
+    bottom: 325px;
+    right: 235px;
+    z-index: 10;
+}
+
+.details p {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.education {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    border: 2px solid black;
+}
+
+.educationBanner {
+    width: 100%;
+    height: 80px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.educationBanner h2 {
+    opacity: 75%;
+    font-size: 40px;
+    text-align: left;
+}
+
+.mainRight {
+    width: 35%;
+    height: 2000px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.requests {
+    width: 100%;
+    height: 750px;
+    border: 2px solid ;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.requestBanner {
+    width: 100%;
+    height: 80px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.requestBanner p {
+    font-size: 35;
+    opacity: 50%;
+    color: black;
+}
+
+.pendingRequests {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pendingRequests p {
+    opacity: 75%;
+    color: black;
+    font-size: 35;
+}
+
+.requests img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.connections {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.connectionsBanner {
+    width: 100%;
+    height: 80px;
+    background-color: dodgerblue;
+    align-self: flex-start;
+}
+
+.totalConnections {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.totalConnections p {
+    font-size: 40px;
+    opacity: 75%;
+}
+
+.connectionsBanner p {
+    font-size: 40px;
+    text-align: left;
+}
+
+.connections img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.contact {
+    width: 50%;
+    height: 50px;
+}
+
+.contact p {
+    font-size: 30px;
+    margin: 2px;
+}
