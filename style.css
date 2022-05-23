@@ -59,7 +59,7 @@ body {
 .searchBar {
     height: 100%;
     width: 45%;
-    align-self: flex-end;
+    justify-content: flex-end;
     display: flex;
     align-items: center;
 }
@@ -119,10 +119,11 @@ body {
     width: 100%;
     display: flex;
     background-color: darkslategray;
-    position: relative;
-    z-index: 5;
-    justify-content: left;
-    align-items: flex-end;
+    /* position: relative; */
+    z-index: 1;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     color: black;
 }
 
@@ -137,23 +138,32 @@ body {
     object-fit: cover;
 }
 
+.pinDrop {
+    width: 12px;
+    height: 15px;
+    /* object-fit: cover; */
+}
+
 .details h2 {
     font-size: 50px;
-    position: relative;
-    bottom: 350px;
-    left: 50px;
-    z-index: 30;
+    width: 100%;
+    /* position: relative; */
+    /* bottom: 350px;
+    left: 50px; */
+    /* z-index: 30; */
     color: black;
 }
 
 .details h3 {
-    z-index: 10;
+    width: 90%;
+    /* z-index: 10; */
     color: black;
 }
 
 .subheader {
-    width: 100%;
-    height: 200px;
+    width: 90%;
+    margin: 5%;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     align-self: flex-end;
@@ -173,10 +183,23 @@ body {
     padding: 10px;
 }
 
+.descrip1 {
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.descrip2 {
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+
 .education {
     width: 100%;
     height: 800px;
     display: flex;
+    flex-direction: column;
     background-color: darkslategray;
     color: black;
     border: 2px solid black;
@@ -196,6 +219,29 @@ body {
     font-size: 40px;
     text-align: left;
     color: black;
+}
+
+.educationBody {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.educationBody h3 {
+    font-size: 25px;
+    width: 100%;
+}
+
+.education1 {
+    font-size: 20px;
+    width: 100%;
+}
+
+.education2 {
+    font-size: 18px;
+    width: 100%;
 }
 
 .mainRight {
@@ -221,7 +267,7 @@ body {
 .requestBanner {
     width: 100%;
     height: 80px;
-    background-color: darkslategrey;
+    background-color: dimgrey;
     display: flex;
     justify-content: flex-start;
     align-items: center;
