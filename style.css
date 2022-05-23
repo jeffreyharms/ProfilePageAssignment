@@ -51,7 +51,7 @@ body {
 }
 
 .navbarLeft ul li:hover {
-    opacity: 100%;
+    color: ghostwhite;
     /* box-shadow: 0 0 10px rgb(124, 124, 124); */
     cursor: pointer;
 }
@@ -141,22 +141,16 @@ body {
 .pinDrop {
     width: 12px;
     height: 15px;
-    /* object-fit: cover; */
 }
 
 .details h2 {
     font-size: 50px;
     width: 100%;
-    /* position: relative; */
-    /* bottom: 350px;
-    left: 50px; */
-    /* z-index: 30; */
     color: black;
 }
 
 .details h3 {
     width: 90%;
-    /* z-index: 10; */
     color: black;
 }
 
@@ -276,7 +270,6 @@ body {
 
 .requestBanner p {
     font-size: 40px;
-    opacity: 50%;
     color: black;
 }
 
